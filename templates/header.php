@@ -53,11 +53,7 @@
                                     <a class="nav-link <?= ($rotas[0] == "deletar") ? "active" : ""; ?>" href="tabela-deletar">DELETAR PRODUTO</a>
                                 </li>
                                 <li class="nav-item">
-<<<<<<< HEAD
                                     <a class="nav-link <?= ($rotas[0] == "venda") ? "active" : ""; ?>" href="tabela-vender">REGISTAR VENDAS</a>
-=======
-                                    <a class="nav-link <?= ($rotas[0] == "venda") ? "active" : ""; ?>" href="tabela-venda">REGISTAR VENDAS</a>
->>>>>>> 20bf98ba731b0deb2370636d16a03355778430f5
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link <?= ($rotas[0] == "sair") ? "active" : ""; ?>" href="sair">SAIR</a>
