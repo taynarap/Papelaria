@@ -43,30 +43,7 @@ $produtos = selectSQL("SELECT * FROM produtos LIMIT $elementos_por_pagina OFFSET
                         <?php foreach($produtos as $p): ?>
 
                             <tr class="text-success">
-<<<<<<< HEAD
                                 <?php foreach($p as $chave => $valor): ?>
-=======
-                                <td> <?= $p["id"]; ?> </td>
-
-                                <td> <?= $p["nome"]; ?></td>
-
-                                <td> <?= $p["preco"] . " &euro;"; ?> </td>
-
-                                <td> <?= $p["quantidade"]; ?> </td>
-
-                                <td>
-                                    <a href="vender.php?id=<?= $p["id"]; ?>"><button>VENDER</button></a>
-                                </td>
-                            </tr>
-
-                        <?php endforeach; ?>
-                        
-                    </table>
-                </form>        
-                <div class="mb-4">
-                    <form action="" method="POST">
-                        <button class="btn btn-success rounded" style="display: <?= ($pagina_atual <= 1) ? "none" : ""?>;" name="pagina_atual" value="<?=($pagina_atual > 1) ? ($pagina_atual -1) : 1;?>" <?=($pagina_atual <= 1) ? "disabled" : "";?>>&larr;</button>
->>>>>>> 20bf98ba731b0deb2370636d16a03355778430f5
 
                                     <td><?= $valor; ?><?= ($chave == "preco") ? " €" : ""; ?></td>
 

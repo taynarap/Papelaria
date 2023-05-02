@@ -59,11 +59,12 @@ if($form){
                     <?php foreach($produtos as $p): ?>
 
                         <tr class="text-success">
+                            
                             <?php foreach($p as $chave => $valor): ?>
 
-                            <td><?= $valor; ?><?= ($chave == "preco") ? " €" : ""; ?></td>
+                                <td><?= $valor; ?><?= ($chave == "preco") ? " €" : ""; ?></td>
 
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
 
                         </tr>
 

@@ -1,6 +1,6 @@
 <?php
 
-$url_base = "https://localhost/codemaster/Trabalhos/PHP%20+%20SQL/Trabalho%2017%20(Papelaria)/";
+$url_base = "https://localhost/papelaria/";
 
 $base_dados = [
     "dbname" => "papelaria_db",
