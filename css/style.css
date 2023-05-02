@@ -1,0 +1,110 @@
+:root{
+    --titulo-linksnav-sh: rgb(48, 150, 99);
+    --linksnav-ch-und: cyan;
+    --btn-fundo: rgba(0, 255, 255, 0.5);;
+    --btn-fonte: rgb(48, 150, 99);
+    --linha-hover: rgba(255, 0, 0, 0.25);
+    --td-hover: rgba(255, 255, 0, 0.5);
+    --table-border: rgb(42, 102, 102);
+    --tr: rgba(0, 255, 255, 0.15);
+    --divs: rgba(255, 255, 255, 0.9);
+}
+
+body{
+    background-image: url('../img/fundo_1.jpg');
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.caixa{
+    background-color: var(--divs);
+    border: 3px solid rgb(107, 107, 107);
+    border-radius: 25px;
+    color: var(--titulo-linksnav-sh);
+    max-width: 85%;
+}
+
+.header-titulo {
+    font-size: 30px;
+}
+
+.nav-link{
+    color: var(--titulo-linksnav-sh);
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color: var(--titulo-linksnav-sh);
+    font-size: 18px;
+    text-decoration: 3px underline var(--linksnav-ch-und);
+}
+
+.nav-link.active{
+    color: var(--titulo-linksnav-sh) !important;
+    font-size: 18px;
+    text-decoration: 3px underline var(--linksnav-ch-und);
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="number"]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: var(--btn-fundo);
+    border: 1px dashed var(--table-border);
+    border-radius: 20px;
+    color: var(--btn-fonte);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+button{
+    background-color: var(--btn-fundo);
+    border: 1px dashed var(--table-border);
+    border-radius: 20px;
+    color: var(--btn-fonte);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+}
+
+.ordenar{
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.2em;
+}
+
+input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+
+.table, th, td{
+    border: 3px dashed var(--table-border);
+}
+
+
+th{
+    background-color: white !important;
+    text-transform: uppercase;
+}
+
+td:hover{
+    background-color: var(--td-hover);
+    cursor:default;
+}
+
+tr:nth-child(even){
+    background-color: var(--tr);
+}
+
+.rodape{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem !important;
+}
