@@ -7,7 +7,7 @@ if(isset($_POST["codigo"])) {
 
     $codigo = $_POST["codigo"];
 
-    $produto_especifico = selectSQLUnico("SELECT * FROM produtos WHERE id=$codigo");
+    $produto_especifico = getProdutoID($codigo);
 }
 
 ?>

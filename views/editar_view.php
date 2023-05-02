@@ -7,18 +7,18 @@ $form = isset($_POST["nomeNovo"]) && isset($_POST["precoNovo"]) && isset($_POST[
 
 if(isset($_POST['id'])){
 
-    $idProduto = $_POST['id'];
+    $id = $_POST['id'];
 
-    $produto_especifico = selectSQLUnico("SELECT * FROM produtos WHERE id=$idProduto");
+    $produto_especifico = getProdutoID($rotas[1]);
 
 } elseif($form) {
 
-    $idProduto = $_POST['editar'];
+    $id = $_POST['editar'];
     $nome = $_POST["nomeNovo"];
     $preco = $_POST["precoNovo"];
     $quantidade = $_POST["quantidadeNova"];
 
-    iduSQL("UPDATE produtos SET nome='$nome', preco='$preco', quantidade='$quantidade' WHERE id='$idProduto'");
+    iduSQL("UPDATE produtos SET nome='$nome', preco='$preco', quantidade='$quantidade' WHERE id='$id'");
 }
 
 ?>
@@ -31,9 +31,9 @@ if(isset($_POST['id'])){
 
                     <form action="" method="POST">         
             
-                        <h3>Editar produto (<?= $idProduto; ?>)</h3>
+                        <h3>Editar produto (<?= $id; ?>)</h3>
                         <br>
-                        <input type="hidden" name="editar" value="<?= $idProduto; ?>">
+                        <input type="hidden" name="editar" value="<?= $id; ?>">
                         <input type="text" name="nomeNovo" value="<?= $produto_especifico["nome"]; ?>">
                         <br><br>
                         <input type="number" name="precoNovo" step="0.01" value="<?= $produto_especifico["preco"]; ?>">

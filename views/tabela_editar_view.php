@@ -3,7 +3,7 @@ require_once("requisitos.php");
 
 estaLogado();
 
-$produtos = selectSQL("SELECT * FROM produtos");
+$produtos = getTodosProdutos();
 
 //Paginacao
 
@@ -53,7 +53,9 @@ $produtos = selectSQL("SELECT * FROM produtos LIMIT $elementos_por_pagina OFFSET
 
                                 <td>
                                     <input type="hidden" name="id" value="<?= $p["id"]; ?>">
-                                    <input type="submit" value="EDITAR">
+                                    <a href="<?= $url_base; ?>editar/<?= $p["id"]; ?>">
+                                        <button>EDITAR</button>
+                                    </a>
                                 </td>
                             </tr>
 

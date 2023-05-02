@@ -3,7 +3,7 @@ require_once("requisitos.php");
 
 estaLogado();
 
-$produtos = selectSQL("SELECT * FROM produtos");
+$produtos = getTodosProdutos();
 
 //Paginacao
 

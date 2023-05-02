@@ -1,7 +1,11 @@
 <?php
+//CONFIG
+require_once("config/config.php");
+require_once("config/base_dados.php");
 
-require_once("php/config.php");
-require_once("php/base_dados.php");
-require_once("php/funcoes.php");
+//HELPERS
+require_once("helpers/acessos_helper.php");
+require_once("helpers/login_helper.php");
+require_once("helpers/produtos_helper.php");
 
 ?>
