@@ -1,20 +1,3 @@
-<?php
-require_once("requisitos.php");
-
-estaLogado();
-
-if(isset($_POST['id'])){
-
-    $idProduto = $_POST['id'];
-
-    $produto_especifico = selectSQLUnico("SELECT * FROM produtos WHERE id=$idProduto");
-
-} elseif(isset($_POST["apagar"])) {
-    iduSQL("DELETE FROM produtos WHERE id='$_POST[apagar]'");
-} 
-
-?>
-
 <main>
     <div class="container-fluid caixa">
         <div class="row d-flex justify-content-center mt-5">

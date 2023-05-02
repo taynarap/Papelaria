@@ -50,10 +50,9 @@ if($form){
                 <table class="table mb-4">
                     
                     <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
+                        <?php foreach($produtos[0] as $chave => $p): ?>
+                            <th><?= $chave; ?></th>
+                        <?php endforeach; ?>
                     </tr>
                 
                     <?php foreach($produtos as $p): ?>

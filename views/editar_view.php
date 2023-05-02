@@ -1,28 +1,3 @@
-<?php
-require_once("requisitos.php");
-
-estaLogado();
-
-$form = isset($_POST["nomeNovo"]) && isset($_POST["precoNovo"]) && isset($_POST["quantidadeNova"]) && isset($_POST["editar"]);
-
-if(isset($_POST['id'])){
-
-    $id = $_POST['id'];
-
-    $produto_especifico = getProdutoID($rotas[1]);
-
-} elseif($form) {
-
-    $id = $_POST['editar'];
-    $nome = $_POST["nomeNovo"];
-    $preco = $_POST["precoNovo"];
-    $quantidade = $_POST["quantidadeNova"];
-
-    iduSQL("UPDATE produtos SET nome='$nome', preco='$preco', quantidade='$quantidade' WHERE id='$id'");
-}
-
-?>
-
 <main>
     <div class="container-fluid caixa">
         <div class="row d-flex justify-content-center mt-5">

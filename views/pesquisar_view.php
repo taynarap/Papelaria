@@ -3,7 +3,7 @@ require_once("requisitos.php");
 
 estaLogado();
 
-if(isset($_POST["codigo"])) {
+if (isset($_POST["codigo"])) {
 
     $codigo = $_POST["codigo"];
 
@@ -22,23 +22,22 @@ if(isset($_POST["codigo"])) {
                 <p class="login-titulo">PESQUISAR</p>
 
                 <form action="" method="POST">
-                        <input type="text" name="codigo" placeholder="Código" require="required">
-                        <br>
-                        <input class="mt-4 mb-3" type="submit" value="PESQUISAR">
+                    <input type="text" name="codigo" placeholder="Código" require="required">
+                    <br>
+                    <input class="mt-4 mb-3" type="submit" value="PESQUISAR">
                 </form>
 
 
-                <?php if (isset($produto_especifico["id"])): ?>
+                <?php if (isset($produto_especifico["id"])) : ?>
 
                     <table class="table mb-4">
-                        
+
                         <tr>
-                            <th>Id</th>
-                            <th>Nome</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
+                            <?php foreach ($produtos[0] as $chave => $p) : ?>
+                                <th><?= $chave; ?></th>
+                            <?php endforeach; ?>
                         </tr>
-                    
+
                         <tr class="text-success">
                             <td>
                                 <?= $produto_especifico["id"]; ?>
@@ -59,7 +58,7 @@ if(isset($_POST["codigo"])) {
 
                     </table>
 
-                <?php elseif(isset($_POST["codigo"]) && empty($produto_especifico["id"])): ?>
+                <?php elseif (isset($_POST["codigo"]) && empty($produto_especifico["id"])) : ?>
 
                     <p class="mt-4 text-danger">Produto (<?= $codigo; ?>) não encontrado!</p>
 
