@@ -1,3 +1,4 @@
+/* CORES */
 :root{
     --titulo-linksnav-sh: rgb(48, 150, 99);
     --linksnav-ch-und: cyan;
@@ -10,24 +11,15 @@
     --divs: rgba(255, 255, 255, 0.9);
 }
 
+/* CSS */
+
 body{
     background-image: url('../img/fundo_1.jpg');
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
-.caixa{
-    background-color: var(--divs);
-    border: 3px solid rgb(107, 107, 107);
-    border-radius: 25px;
-    color: var(--titulo-linksnav-sh);
-    max-width: 85%;
-}
-
-.header-titulo {
-    font-size: 30px;
-}
-
+/* NAVBAR - HEADER */
 .nav-link{
     color: var(--titulo-linksnav-sh);
     font-size: 16px;
@@ -45,9 +37,24 @@ body{
     text-decoration: 3px underline var(--linksnav-ch-und);
 }
 
+.caixa{
+    background-color: var(--divs);
+    border: 3px solid rgb(107, 107, 107);
+    border-radius: 25px;
+    color: var(--titulo-linksnav-sh);
+    max-width: 85%;
+}
+
+.header-titulo {
+    font-size: 30px;
+}
+
 .titulo{
     font-size: 20px;
 }
+
+
+
 
 input[type="text"], input[type="password"], input[type="number"]{
     font-family: Arial, Helvetica, sans-serif;

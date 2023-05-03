@@ -1,5 +1,4 @@
 <main>
-
     <div class="container-fluid caixa">
 
         <div class="row d-flex justify-content-center">
@@ -7,7 +6,6 @@
             <div class="col-12 mt-4">
 
                 <p class="titulo">EDITAR</p>
-                <form action="" method="POST">
 
                     <table class="table mb-4">
 
@@ -38,7 +36,7 @@
                         <?php endforeach; ?>
 
                     </table>
-                </form>
+
                 <?php require_once("templates/paginacao.php"); ?>
             </div>
         </div>

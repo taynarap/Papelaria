@@ -2,6 +2,7 @@
 //Importacoes
 require_once("requisitos.php");
 
+//VERIFICAÇÃO DE SENHA E LOGIN INSERIDOS
 $form = isset($_POST["login"]) && isset($_POST["senha"]);
 
 if($form){

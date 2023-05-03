@@ -2,10 +2,9 @@
     <div class="container-fluid caixa">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col-12 pb-4 text-center">
-                <?php if(empty($form)): ?>
+                <?php if(!isset($_POST["editar"])): ?>
+                    <form action="" method="POST">
 
-                    <form action="" method="POST">         
-            
                         <h3>Editar produto (<?= $id; ?>)</h3>
                         <br>
                         <input type="hidden" name="editar" value="<?= $id; ?>">
@@ -19,13 +18,13 @@
 
                     </form>
 
-                <?php elseif(isset($_POST["editar"])): ?>
+                <?php else: ?>
 
-                        <p class="titulo">Produto editado com sucesso!</p>
+                    <p class="titulo">Produto editado com sucesso!</p>
 
-                        <a href="tabela-editar">
-                            <button>VOLTAR</button>
-                        </a>
+                    <a href="<?= $url_base; ?>tabela-editar">
+                        <button>VOLTAR</button>
+                    </a>
 
                 <?php endif; ?>
 

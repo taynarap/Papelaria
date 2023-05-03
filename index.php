@@ -1,8 +1,8 @@
 <?php
 
-// echo "<pre>";
-// print_r($_SERVER);
-// echo "</pre>";
+//LOGIN INFO
+//login -> taynara
+//senha -> 1111
 
 //Importacoes
 require_once("requisitos.php");

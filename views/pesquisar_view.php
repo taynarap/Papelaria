@@ -1,17 +1,3 @@
-<?php
-require_once("requisitos.php");
-
-estaLogado();
-
-if (isset($_POST["codigo"])) {
-
-    $codigo = $_POST["codigo"];
-
-    $produto_especifico = getProdutoID($codigo);
-}
-
-?>
-
 <main>
     <div class="container-fluid caixa">
 

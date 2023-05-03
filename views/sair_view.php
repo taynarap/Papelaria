@@ -1,9 +1,3 @@
-<?php
-require_once("requisitos.php");
-
-logout();
-
-?>
 <main>
     <div class="container-fluid caixa">
 
