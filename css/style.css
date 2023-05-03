@@ -1,4 +1,4 @@
-/* CORES */
+/*------------ CORES--------------- */
 :root{
     --titulo-linksnav-sh: rgb(48, 150, 99);
     --linksnav-ch-und: cyan;
@@ -11,7 +11,7 @@
     --divs: rgba(255, 255, 255, 0.9);
 }
 
-/* CSS */
+/*--------------- CSS ------------------ */
 
 body{
     background-image: url('../img/fundo_1.jpg');
@@ -19,7 +19,7 @@ body{
     text-align: center;
 }
 
-/* NAVBAR - HEADER */
+/*------------ NAVBAR - HEADER ------------ */
 .nav-link{
     color: var(--titulo-linksnav-sh);
     font-size: 16px;
@@ -49,11 +49,11 @@ body{
     font-size: 30px;
 }
 
+/* --------------- MAIN ----------------- */
+
 .titulo{
     font-size: 20px;
 }
-
-
 
 
 input[type="text"], input[type="password"], input[type="number"]{
@@ -88,17 +88,10 @@ button{
     font-size: 14px; 
 }
 
-.ordenar{
-    display: inline-block;
-    text-align: center;
-    margin: 0 0.2em;
-}
-
 input[type="radio"] {
   display: block;
   margin: 0.5em auto;
 }
-
 
 .table, th, td{
     border: 3px dashed var(--table-border);
@@ -107,7 +100,6 @@ input[type="radio"] {
 tr:hover{
     background-color: var(--linha-hover) !important;
 }
-
 
 th{
     background-color: white !important;
@@ -122,6 +114,14 @@ td:hover{
 tr:nth-child(even){
     background-color: var(--tr);
 }
+
+.ordenar{
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.2em;
+}
+
+/*--------------- FOOTER ---------------*/
 
 .rodape{
     background-color: rgba(0, 0, 0, 0.4);
