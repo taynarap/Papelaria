@@ -19,9 +19,9 @@
                     </select>
 
                     <br>
-                    
+
                     <label for="ASC" class="text-dark ordenar me-3">Ascendente
-                    <input type="radio" name="ordem" value="ASC" required="required" checked id="ASC">
+                        <input type="radio" name="ordem" value="ASC" required="required" checked id="ASC">
                     </label>
                     <label for="DESC" class="text-dark ordenar">Descendente
                         <input type="radio" name="ordem" value="DESC" required="required" id="DESC">
@@ -32,31 +32,10 @@
 
                 </form>
 
-                <table class="table mb-4">
-                    
-                    <tr>
-                        <?php foreach($produtos[0] as $chave => $p): ?>
-                            <th><?= $chave; ?></th>
-                        <?php endforeach; ?>
-                    </tr>
+                <?php require_once("templates/table.php"); ?>
                 
-                    <?php foreach($produtos as $p): ?>
-
-                        <tr class="text-success">
-                            
-                            <?php foreach($p as $chave => $valor): ?>
-
-                                <td><?= $valor; ?><?= ($chave == "preco") ? " €" : ""; ?></td>
-
-                            <?php endforeach; ?>
-
-                        </tr>
-
-                    <?php endforeach; ?>
-                    
-                </table>
             </div>
         </div>
     </div>
-    
+
 </main>

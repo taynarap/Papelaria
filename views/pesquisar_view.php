@@ -15,8 +15,11 @@
 
 
                 <?php if (isset($produto_especifico["id"])) : ?>
+                    <a href="pesquisar">
+                        <button>RESET</button>
+                    </a>
 
-                    <table class="table mb-4">
+                    <table class="table mt-3 mb-4">
 
                         <tr>
                             <?php foreach ($produtos[0] as $chave => $p) : ?>
@@ -45,6 +48,10 @@
                     </table>
 
                 <?php elseif (isset($_POST["codigo"]) && empty($produto_especifico["id"])) : ?>
+
+                    <a href="pesquisar">
+                        <button>RESET</button>
+                    </a>
 
                     <p class="mt-4 text-danger">Produto (<?= $codigo; ?>) não encontrado!</p>
 
