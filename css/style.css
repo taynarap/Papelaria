@@ -127,3 +127,69 @@ tr:nth-child(even){
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 1rem !important;
 }
+
+
+/*--------------- MEDIA QUERIES ---------------*/
+@media all and (max-width: 932px){
+    .header-titulo{
+        font-size: 28px;
+    }
+
+    .nav-link{
+        font-size: 15px!important;
+    }
+
+    .titulo{
+        font-size: 18px;
+    }
+
+    .table{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 889px){
+    .header-titulo{
+        font-size: 25px;
+    }
+
+    .nav-link{
+        font-size: 14px!important;
+    }
+
+    .titulo{
+        font-size: 16px;
+    }
+
+    .table{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 470px){
+
+    main{
+        margin-bottom: 30px;
+    }
+
+    .caixa{
+        max-width: 100%;
+    }
+
+    tbody {
+        height: 100px !important;
+        width: 100% !important;
+    }
+
+    input[type="submit"], input[type="reset"]{
+        font-size: 13px !important;
+    }
+
+    button{
+        font-size: 13px;
+    }
+
+    button:hover{
+        font-size: 14px;
+    }
+}
