@@ -17,7 +17,7 @@
 
 <body class="text-center">
 
-    <header class="mb-4">
+    <header class="mb-4 <?= ($rotas[0] == "sair") ? "d-none" : ""; ?>">
         <div class="container-fluid caixa mt-3 mb-4">
             <div class="row">
                 <div class="col-12">

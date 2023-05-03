@@ -7,7 +7,12 @@
 
                 <h3>Login</h3>
 
-                <form action="login.php" method="POST">
+                <?php if(isset($_POST["login"])) : ?>
+                    <p class="text-danger">Login inválido, tente novamente.</p>
+                <?php endif; ?>
+
+
+                <form action="" method="POST">
 
                     <input type="text" name="login" placeholder="Login" required="required">
                     <br><br>
@@ -18,5 +23,5 @@
                 </form>
             </div>
         </div>
-    </div>   
+    </div>
 </main>

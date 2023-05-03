@@ -1,5 +1,5 @@
 <main>
-    <div class="container-fluid caixa">
+    <div class="container-fluid caixa mt-2">
 
         <div class="row d-flex justify-content-center">
 
