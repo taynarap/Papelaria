@@ -1,5 +1,7 @@
 <?php
 
+//TABELA DE TODOS OS PRODUTOS + BOTAO EDITAR.  ESTA PAGINA IRA REDERECIONAR O USUARIO PARA EDITAR_MODEL.PHP
+
 require_once("requisitos.php");
 
 estaLogado();

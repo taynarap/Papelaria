@@ -1,10 +1,11 @@
 <?php
 
+// Inserir Novos Produtos
+
 require_once("requisitos.php");
 
 estaLogado();
 
-// Inserir Novos Produtos
 $form = isset($_POST["nome"]) && isset($_POST["preco"]) && isset($_POST["quantidade"]);
 
 if($form){
@@ -13,7 +14,6 @@ if($form){
         iduSQL("INSERT INTO produtos (nome, preco, quantidade) VALUES ('$_POST[nome]', '$_POST[preco]', '$_POST[quantidade]')");
     }
 }
-
 
 require_once("templates/header.php");
 

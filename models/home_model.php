@@ -1,5 +1,7 @@
 <?php
 
+// PAGINA BEM-VINDO + ULTIMO ACESSO
+
 require_once("templates/header.php");
 
 require_once("views/home_view.php");

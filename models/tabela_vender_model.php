@@ -1,5 +1,7 @@
 <?php
 
+//TABELA DE TODOS OS PRODUTOS + BOTAO VENDER. ESTA PAGINA IRA REDERECIONAR O USUARIO PARA VENDER_MODEL.PHP
+
 require_once("requisitos.php");
 
 estaLogado();

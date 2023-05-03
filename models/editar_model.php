@@ -1,5 +1,7 @@
 <?php
 
+//EDIÇÃO DE PRODUTO
+
 require_once("requisitos.php");
 
 estaLogado();

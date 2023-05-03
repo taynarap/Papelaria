@@ -1,10 +1,11 @@
 <?php
 
+//LISTAR TODOS OS PRODUTOS COM ORDER BY
+
 require_once("requisitos.php");
 
 estaLogado();
 
-//ORDER BY
 $produtos = selectSQL("SELECT * FROM produtos");
 $form = isset($_POST["coluna"]) && isset($_POST["ordem"]);
 

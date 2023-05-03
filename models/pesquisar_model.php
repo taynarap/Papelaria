@@ -1,5 +1,7 @@
 <?php
 
+// PESQUISAR PRODUTO POR ID
+
 require_once("requisitos.php");
 
 estaLogado();
@@ -12,7 +14,6 @@ if (isset($_POST["codigo"])) {
 
     $produto_especifico = getProdutoID($codigo);
 }
-
 
 require_once("templates/header.php");
 

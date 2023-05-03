@@ -1,5 +1,7 @@
 <?php
 
+//PAGINA PARA VENDER PRODUTOS
+
 require_once("requisitos.php");
 
 estaLogado();

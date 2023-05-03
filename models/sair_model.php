@@ -1,5 +1,7 @@
 <?php
 
+// LOGOUT
+
 require_once("requisitos.php");
 
 logout();

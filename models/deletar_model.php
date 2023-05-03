@@ -1,5 +1,7 @@
 <?php
 
+//APAGAR PRODUTO
+
 require_once("requisitos.php");
 
 estaLogado();

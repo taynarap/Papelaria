@@ -1,4 +1,7 @@
 <?php
+
+//TABELA DE TODOS OS PRODUTOS + BOTAO DELETAR.  ESTA PAGINA IRA REDERECIONAR O USUARIO PARA DELETAR_MODEL.PHP
+
 require_once("requisitos.php");
 
 estaLogado();

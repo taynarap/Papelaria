@@ -1,8 +1,7 @@
 <?php
 
 //LOGIN
-function fazerLogin($login, $senha)
-{
+function fazerLogin($login, $senha){
 
     $usuario = selectSQLUnico("SELECT * FROM usuarios WHERE login='$login'");
 
@@ -22,8 +21,7 @@ function fazerLogin($login, $senha)
     }
 }
 
-function estaLogado()
-{
+function estaLogado(){
     session_start();
     if (!isset($_SESSION["usuario"])) {
         header("Location: index.php");
@@ -31,8 +29,7 @@ function estaLogado()
     }
 }
 
-function logout()
-{
+function logout(){
     session_start();
     session_destroy();
 }
