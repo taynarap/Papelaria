@@ -1,11 +1,9 @@
-# Backoffice Papelaria
+<h1 align="center"> Backoffice for a stationery shop </h1>
 
-## 🔎 Projeto
-Projecto de um backoffice para uma papelaria. É possível listar os produtos atuais por ordem ascendente ou descendente, e relativamente ao nome, preço, quantidade ou posição na tabela. É também possível criar novos produtos, editar e apagar produtos atuais e registar vendas.
+## 🔎 Project
+The project is a back office for a stationery shop. It's possible to list all of the current items available at the shop and list them alphabetically, by price, quantity, or table position. It's also possible to add new items to the list, edit, remove, and sell items.
 
-## ⚙️ Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## ⚙️ Technologies
 
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
